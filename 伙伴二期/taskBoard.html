@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务版</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-custom.css">
+    <link rel="stylesheet" type="text/css" href="js/iCheck/skins/minimal/blue.css">
+    <link rel="stylesheet" href="font-icomoon/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="hb-task-content">
+        <div class="hb-content">
+            <div class="task-board-inner">
+                <div class="task-header-box">
+                    <h3 class="font-song"><b>伙伴V2.2研发项目</b></h3>
+                    <ul class="status-bar font-song clearfix">
+                        <li class="active"><span class="hover-status">状态：全部<a href="#" class="dele-pe"><b>×</b></a></span></li>
+                        <li class="active"><span class="hover-status">人员：陈沛<a href="#" class="dele-pe"><b>×</b></a></span></li>
+                        <li><span class="hover-status">标签：全部<a href="#" class="dele-pe"><b>×</b></a></span></li>
+                        <li>
+                            <label>
+                                <input type="checkbox" />显示已完成的任务</label>
+                        </li>
+                        <li class="statu-li pro-statis active"><span class="hover-status"><i class="icon-chevron-left"></i>项目统计</span></li>
+                        <li class="statu-li"><span class="hover-status"><i class="icon-menu2 icon-16px"></i>列表视图</span></li>
+                    </ul>
+                </div>
+                <div class="hb-task-wrap">
+                    <div class="vertical-scroll horizontal-scroll task-board-box clearfix">
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组一</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #34b27d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #cb4d4d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务到十三个字折行贴标签·30%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="cre-new-task"><b>新建任务...</b></a>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组二</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">超期的任务·80%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-ext">已超期</span>
+                                                <span class="subtask-info"><i class="icon-tasks"></i>2</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text task-off">已完成的任务·100%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月15日</span>
+                                                <span class="label work-off">已完成</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">待审核的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月20日</span>
+                                                <span class="label work-todo">待审核</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">进行中的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">已完成</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">未开始的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-nostar">未开始</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="cre-new-task"><b>新建任务...</b></a>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组三</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">有两个子任务的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                                <span class="subtask-info"><i class="icon-tasks"></i>2</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">填写了计划、剩余工时的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月15日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media task-edit">
+                                        <textarea></textarea>
+                                        <div class="task-info-box bor-top bott-color clearfix">
+                                            <div class="inner-box">
+                                                <div class="info-box">
+                                                    <a href="#" class="pull-right"><b>贴标签</b></a>
+                                                    <span class="text-name">负责人：</span>
+                                                    <div class="avatar-mini">
+                                                        <img alt="" src="images/avator.png" />
+                                                    </div>
+                                                    <a href="#" class="update-charge"><i class="icon-loop2 icon-16px"></i></a>
+                                                </div>
+                                                <div class="info-box clearfix">
+                                                    <span class="text-name pull-left">参与人：</span>
+                                                    <div class="members-box">
+                                                        <ul class="members-list clearfix">
+                                                            <li>
+                                                                <a href="#"><i class="icon-circle-self"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="text-name">截止日期：</span>
+                                                    <a href="#" class="exp-time show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月21日</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="more-btn"><b>更多...</b></a>
+                                    </div>
+                                </div>
+                                <div class="task-btn-box clearfix">
+                                    <a href="#" class="pull-right"><i class="icon-close icon-16px"></i></a>
+                                    <button href="#" class="action-btn">创建</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组四</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">未设定负责人的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png" />
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">填写了计划、剩余工时的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月15日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media task-edit">
+                                        <i class="icon-bookmark task-tag" style="color: #cb4d4d;"></i>
+                                        <textarea></textarea>
+                                        <div class="task-info-box bor-top clearfix">
+                                            <div class="inner-box">
+                                                <div class="info-box">
+                                                    <a href="#" class="pull-right text-error"><b>紧急</b></a>
+                                                    <span class="text-name">负责人：</span>
+                                                    <div class="avatar-mini">
+                                                        <img alt="" src="images/avator.png" />
+                                                    </div>
+                                                    <a href="#" class="update-charge"><i class="icon-loop2 icon-16px"></i></a>
+                                                </div>
+                                                <div class="info-box clearfix">
+                                                    <span class="text-name pull-left">参与人：</span>
+                                                    <div class="members-box">
+                                                        <ul class="members-list clearfix">
+                                                            <li>
+                                                                <div class="avatar-mini">
+                                                                    <a href="javascipt:;">
+                                                                        <img src="images/avator.png" title="高玉凯" alt="高玉凯">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="avatar-mini">
+                                                                    <a href="javascipt:;">
+                                                                        <img src="images/avator.png" title="高玉凯" alt="高玉凯">
+                                                                    </a>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><i class="icon-circle-self"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="text-name">截止日期：</span>
+                                                    <a href="#" class="exp-time show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月21日</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="task-info-box bor-top clearfix">
+                                            <div class="inner-box">
+                                                <div class="info-box">
+                                                    <span class="text-name">开始日期：</span>
+                                                    <a href="#" class="exp-time show-calendar"><i class="icon-calendar color-blue icon-16px"></i>未设置</a>
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="text-name">计划工时：<input type="text" />
+                                                        小时</span>
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="text-name">剩余工时：<input type="text" />
+                                                        小时</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="task-info-box bor-top clearfix">
+                                            <div class="inner-box">
+                                                <div class="info-box">
+                                                    <span class="text-name">旁观者：</span>
+                                                    <a href="#"><i class="icon-circle-self"></i></a>
+                                                </div>
+                                                <div class="info-box">
+                                                    <label for="">
+                                                        <input type="checkbox" />启用任务审核</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="task-info-box bor-top clearfix">
+                                            <div class="inner-box define-field">
+                                                <div class="info-box">
+                                                    <span class="text-name">自定义字段1：</span><input type="text" />
+                                                </div>
+                                                <div class="info-box">
+                                                    <span class="text-name">自定义字段2：</span><input type="text" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-btn-box clearfix">
+                                    <a href="#" class="pull-right"><i class="icon-close icon-16px"></i></a>
+                                    <button href="#" class="action-btn">创建</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组一</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #34b27d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #cb4d4d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务到十三个字折行贴标签·30%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="cre-new-task"><b>新建任务...</b></a>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组一</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #34b27d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #cb4d4d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务到十三个字折行贴标签·30%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="cre-new-task"><b>新建任务...</b></a>
+                            </div>
+                        </div>
+                        <div class="task-board-wrap corner-3px clearfix">
+                            <div class="task-board font-song clearfix">
+                                <p class="task-board-name clearfix"><b>分组一</b>  <a href="#" class="pull-right"><i class="icon-arrow-circle-o-down task-set-btn icon-16px"></i></a></p>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #34b27d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="task-board-content corner-3px">
+                                    <div class="media task-media">
+                                        <i class="icon-bookmark task-tag" style="color: #cb4d4d;"></i>
+                                        <div class="pull-left">
+                                            <div class="avatar-mini">
+                                                <img alt="" src="images/avator.png">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="media-text">贴标签的任务到十三个字折行贴标签·30%</p>
+                                            <p class="media-action clearfix">
+                                                <span class="pull-right text-time"><i class="icon-clock"></i>10月21日</span>
+                                                <span class="label work-in">进行中</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="cre-new-task"><b>新建任务...</b></a>
+                            </div>
+                        </div>
+
+                        <div class="task-board-wrap new-group font-song corner-3px">新建分组...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/iCheck/jquery.icheck.js"></script>
+    <script src="js/iCheck/jquery.icheck.binding.js"></script>
+    <script src="js/jquery.livequery.js"></script>
+    <script src="js/ueditor/ueditor.config.js"></script>
+    <script src="js/ueditor/ueditor.all.js"></script>
+    <script src="js/ueditor/HtmlEditor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

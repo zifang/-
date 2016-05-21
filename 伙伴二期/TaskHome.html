@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务中心</title>
+     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-custom.css">
+    <link rel="stylesheet" type="text/css" href="js/iCheck/skins/minimal/blue.css">
+    <link rel="stylesheet" href="font-icomoon/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        $(function () {
+            $(".task-action-box").on('click', ".textarea-box", function (e) {
+                e.preventDefault();
+                $(".task-action-box .publishwrap-task").removeClass("hidden-textarea");
+                $(".task-action-box textarea").focus();
+            });
+
+            $(".task-edit-box").on('click', ".textarea-box", function (e) {
+                e.preventDefault();
+                $(".task-edit-box .publishwrap-diary").removeClass("hidden-textarea");
+                $(".task-edit-box textarea").focus();
+            });
+
+            $(".week-edit-box ").on('click', ".textarea-box", function (e) {
+                e.preventDefault();
+                $(".week-edit-box .publishwrap-weekreport").removeClass("hidden-textarea");
+                $(".week-edit-box textarea").focus();
+            });
+            $("body").on('click', "#addressBook", function (e) {
+                e.preventDefault();
+                $(".hb-sidebar").addClass("hb-sidebar-2");
+            });
+        });
+    </script>
+</head>
+<body>
+  <div class="hb-content">
+   <div class="hb-tasklist-content task-wrap">
+       <div class="hb-content-wrap">
+           <div class="hb-content-common inner-padding-set">
+               <div class="task-common-box font-song">
+                   <div class="report-common-title">
+                       <div class="pull-right">
+                           <a href="#"><i class="icon-file4 icon-16px"></i>新建任务</a>
+                           <a href="#"><i class="icon-file-excel icon-16px"></i>导出Excel</a>
+                           <a href="#"><i class="icon-wrench icon-16px"></i>列表设置</a>
+                       </div>
+                       <div class="font-16px">
+                           <a href="#" class="active"><i class="icon-user icon-16px"></i>我的任务</a>
+                           <a href="#"><i class="icon-users icon-16px"></i>部门的任务</a>
+                       </div>
+                   </div>
+                   <div class="task-list-box font-13px">
+                       <div class="task-header clearfix">
+                           <div class="search-box hidden-search pull-right">
+                               <form class="" method="get" action="" id="" novalidate="novalidate" autocomplete="off">
+                                   <a id="searchDoc" href="javascript:;"><i class="icon-search"></i></a>
+                                   <input type="text" value="" placeholder="搜索..." id="">
+                               </form>
+                           </div>
+                           <label class="label-inline pull-right">
+                               <input type="checkbox" />显示已完成的任务</label>
+                           <a href="#" class="active">我负责的</a>
+                           <a href="#">我参与的（2）</a>
+                           <a href="#">需要我审核的（1）</a>
+                           <a href="#">我创建的（2）</a>
+                           <a href="#">我旁观的(1)</a>
+                           <a href="#">任务总览</a>
+                       </div>
+                       <table class="task-list-table table-hover">
+                           <thead>
+                               <tr>
+                                   <td class="sort-btn"><b>任务名称</b><span class="sort-icon" style="opacity: 1;">↑</span>
+                                   <td class="sort-btn">
+                                       <div class="dropdown pull-right">
+                                           <a href="#" class="sort-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                                           <ul class="dropdown-menu">
+                                               <li><a href="#">筛选项1</a></li>
+                                               <li><a href="#">筛选项2</a></li>
+                                           </ul>
+                                       </div>
+                                       <b>任务状态</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                                   <td class="sort-btn">
+                                       <div class="dropdown pull-right">
+                                           <a href="#" class="sort-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                                           <ul class="dropdown-menu">
+                                               <li><a href="#">筛选项1</a></li>
+                                               <li><a href="#">筛选项2</a></li>
+                                           </ul>
+                                       </div>
+                                       <b>负责人</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                                   <td class="sort-btn"><b>计划工时</b><span class="sort-icon" style="opacity: 0;">↑</span></td>
+                                   <td class="sort-btn"><b>剩余工时</b><span class="sort-icon" style="opacity: 0;">↑</span></td>
+                                   <td class="sort-btn">
+                                       <div class="dropdown pull-right">
+                                           <a href="#" class="sort-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                                           <ul class="dropdown-menu">
+                                               <li><a href="#">筛选项1</a></li>
+                                               <li><a href="#">筛选项2</a></li>
+                                           </ul>
+                                       </div>
+                                       <b>任务标签</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                                   <td class="sort-btn">
+                                       <div class="dropdown pull-right">
+                                           <a href="#" class="sort-icon dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+                                           <ul class="dropdown-menu">
+                                               <li><a href="#">筛选项1</a></li>
+                                               <li><a href="#">筛选项2</a></li>
+                                           </ul>
+                                       </div>
+                                       <b>所属项目</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                                   <td class="sort-btn">
+                                       <div class="feedback-box pull-right">
+                                           <a href="#" class="sort-icon show-time-box"><i class="icon-caret-down"></i></a>
+                                           <div class="feedback-layer-box font-13px font-song" style="display: none;">
+                                               <a href="#" class="show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月7日</a>
+                                               - <a href="#" class="show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月7日</a>
+                                               <div class="common-btn-box">
+                                                   <button class="send-btn font-song">确定</button>
+                                                   <button class="cal-btn font-song">重置</button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <b>开始时间</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                                   <td class="sort-btn">
+                                       <div class="feedback-box pull-right">
+                                           <a href="#" class="sort-icon show-time-box"><i class="icon-caret-down"></i></a>
+                                           <div class="feedback-layer-box font-13px font-song" style="display: none;">
+                                               <a href="#" class="show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月7日</a>
+                                               - <a href="#" class="show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月7日</a>
+                                               <div class="common-btn-box">
+                                                   <button class="send-btn font-song">确定</button>
+                                                   <button class="cal-btn font-song">重置</button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <b>截止时间</b><span class="sort-icon" style="opacity: 0;">↑</span>
+                                   </td>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                   <td><table class="table-nowrap"><tbody><tr><td><div>已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务已完成的任务</div></td></tr></tbody></table></td>
+                                   <td><span class="work-in-text">进行中</span></td>
+                                   <td>江世林</td>
+                                   <td>4</td>
+                                   <td>2</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发</td>
+                                   <td>今天</td>
+                                   <td>今天</td>
+                               </tr>
+                               <tr>
+                                   <td><b>贴标签、需要反馈的任务</b></td>
+                                   <td><span class="work-in-text">进行中</span></td>
+                                   <td>江世林</td>
+                                   <td>4</td>
+                                   <td>2</td>
+                                   <td>（无）</td>
+                                   <td>（无）</td>
+                                   <td>今天</td>
+                                   <td>今天</td>
+                               </tr>
+                               <tr>
+                                   <td>贴标签、需要反馈的任务</td>
+                                   <td><span class="work-in-text">进行中</span></td>
+                                   <td>（无）</td>
+                                   <td>（无）</td>
+                                   <td>（无）</td>
+                                   <td>（无）</td>
+                                   <td>（无）</td>
+                                   <td>昨天</td>
+                                   <td>昨天</td>
+                               </tr>
+                               <tr>
+                                   <td>已完成的任务</td>
+                                   <td><span class="work-in-text">进行中</span></td>
+                                   <td>江世林</td>
+                                   <td>3</td>
+                                   <td>3</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发</td>
+                                   <td>昨天</td>
+                                   <td>昨天</td>
+                               </tr>
+                               <tr>
+                                   <td>贴标签、需要反馈的任务</td>
+                                   <td><span class="work-nostar-text">未开始</span></td>
+                                   <td>江世林</td>
+                                   <td>3</td>
+                                   <td>3</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发</td>
+                                   <td>明天</td>
+                                   <td>明天</td>
+                               </tr>
+                               <tr>
+                                   <td>待审核的任务</td>
+                                   <td><span class="work-nostar-text">未开始</span></td>
+                                   <td>陈沛</td>
+                                   <td>2</td>
+                                   <td>2</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发</td>
+                                   <td>明天</td>
+                                   <td>明天</td>
+                               </tr>
+                               <tr class="parent-id">
+                                   <td><a href="#" class="spread-btn"><span class="td-parent-spread"></span></a>有两个子任务的任务</td>
+                                   <td><span class="work-nostar-text">未开始</span></td>
+                                   <td>江世林</td>
+                                   <td>3</td>
+                                   <td>3</td>
+                                   <td>紧急</td>
+                                   <td>伙伴研发</td>
+                                   <td>下周三</td>
+                                   <td>下周三</td>
+                               </tr>
+                               <tr class="child-id">
+                                   <td><span class="td-child"></span>未开始的任务</td>
+                                   <td><span class="work-todo-text">待审核</span></td>
+                                   <td>陈沛</td>
+                                   <td>3</td>
+                                   <td>3</td>
+                                   <td>紧急</td>
+                                   <td>伙伴研发</td>
+                                   <td>下周三</td>
+                                   <td>下周三</td>
+                               </tr>
+                               <tr class="child-id">
+                                   <td><span class="td-last-child"></span>已超期的任务</td>
+                                   <td><span class="work-todo-text">待审核</span></td>
+                                   <td>陈沛</td>
+                                   <td>5</td>
+                                   <td>5</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发</td>
+                                   <td>10月10日</td>
+                                   <td>10月10日</td>
+                               </tr>
+                               <tr>
+                                   <td>贴标签、需要反馈的任务</td>
+                                   <td><span class="work-ext-text">已超期</span></td>
+                                   <td>陈沛</td>
+                                   <td>5</td>
+                                   <td>5</td>
+                                   <td>一般</td>
+                                   <td>伙伴研发伙伴研发...</td>
+                                   <td>10月10日</td>
+                                   <td>10月10日</td>
+                               </tr>
+                           </tbody>
+                       </table>
+                   </div>
+                   <div class="task-footer-box font-13px clearfix">
+                       <div class="pull-right">
+                           <a href="#">1/7页</a>
+                           <a href="#">下一页</a>
+                       </div>
+                       <a href="#" class="active">共8个任务</a>
+                       <a href="#">进行中 5</a>
+                       <a href="#">未开始 3</a>
+                       <a href="#">待审核 0</a>
+                       <a href="#">已超期 1</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>
+ <script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/iCheck/jquery.icheck.binding.js"></script>
+<script src="js/jquery.livequery.js"></script>
+<script src="js/ueditor/ueditor.config.js"></script>
+<script src="js/ueditor/ueditor.all.js"></script>
+<script src="js/ueditor/HtmlEditor.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

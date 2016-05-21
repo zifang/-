@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>写汇报</title>
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-custom.css">
+    <link rel="stylesheet" type="text/css" href="js/iCheck/skins/minimal/blue.css">
+    <link rel="stylesheet" href="font-icomoon/style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="hb-content">
+    <div class="inner-padding-set">
+        <div class="hb-report-content font-song font-13px">
+            <div class="report-title clearfix">
+                <div class="pull-left">
+                    <div class="colum">
+                        <p><b>汇报类型</b></p>
+                        <label>
+                            <input type="radio" />日报
+                        </label>
+                        <label>
+                            <input type="radio" />周报</label>
+                    </div>
+                    <div class="colum-sec">
+                        <p><b>汇报日期</b></p>
+                        <label>
+                            <input type="radio" />今天</label>
+                        <label>
+                            <input type="radio" />昨天</label>
+                        <label>
+                            <input type="radio" />其他</label>
+                        <a href="#" class="show-calendar"><i class="icon-calendar color-blue icon-16px"></i>10月7日</a>
+                    </div>
+                    <div class="colum-thir">
+                        <p><b>审阅人</b></p>
+                        <div class="pull-left">
+                            <a href="#" class="avatar-mini">
+                                <img src="images/default-logo-project.png" alt="" />
+                            </a>
+                        </div>
+                        <a href="#" class="principal">江世林</a>
+                        <a href="#"><i class="border-icon icon-refresh"></i></a>
+                    </div>
+                </div>
+                <div class="colum-last">
+                    <p><b>抄送人</b></p>
+                    <div class="members-box">
+                        <ul class="members-list clearfix">
+                            <li>
+                                <a href="#" class="avatar-mini">
+                                    <img src="images/default-logo-project.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="icon-circle-self"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="select-template">
+                <p><b>选择汇报模板</b><a href="#" class="color-blue">模板管理</a></p>
+                <div>
+                    <label>
+                        <input type="radio" />不使用模板</label>
+                    <label>
+                        <input type="radio" />市场部模板</label>
+                    <label>
+                        <input type="radio" />研发部模板</label>
+                    <label>
+                        <input type="radio" />公司模板</label>
+                    <label>
+                        <input type="radio" />公司模板</label>
+                </div>
+            </div>
+            <!-- @* 不使用模板的时候，用这块 *@ -->
+            <div class="editor-box">
+               <textarea class="" name="" id="name1" rows="10" plugin="ueditor" data-options={"editorMode":"Standard"}></textarea>
+            </div>
+            <!-- @* 使用模板的时候，用下面的 *@ -->
+            <div class="write-report clearfix">
+                <div class="the-week-box">
+                    <p class="the-week"><b>本周的工作成果，并说说你特别满意的成果。</b></p>
+                    <!-- @* 刚开始显示它 *@ -->
+                    <div class="hide-htmleditor"></div>
+                    <!-- @* 点开的时候，切换显示htmlEditor *@ -->
+                    <div class="htmleditor-box" style="display: none;">
+                     <textarea class="" name="" id="name" rows="10" plugin="ueditor" data-options={"editorMode":"Basic"}></textarea>
+                    </div>
+                </div>
+                <div class="next-week-box">
+                    <p class="next-week"><b>下周的工作计划、目前遇到的困难。</b></p>
+                    <div class="hide-htmleditor"></div>
+                    <div class="htmleditor-box" style="display: none;">
+                        <!-- @Html.HtmlEditor("name", null, new HtmlEditorOptions(HtmlEditorMode.Inline, null)) -->
+                        <textarea class="name" name="" id="content" cols="30" rows="10" plugin="ueditor" data-options={"editorMode":"inline"}></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="report-join-task">
+                <label>
+                    <input type="checkbox" /><b>汇报我参与的任务</b></label>
+                <p class="text-remark">选中后，会自动将你近期的任务进展，汇总到汇报内容中</p>
+                <table class="report-table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox" /></th>
+                            <th>任务名称</th>
+                            <th>任务状态</th>
+                            <th>所属项目</th>
+                            <th>负责人</th>
+                            <th>计划工时</th>
+                            <th>剩余工时</th>
+                            <th>开始时间</th>
+                            <th>截止时间</th>
+                            <th>任务标签</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" /></td>
+                            <td>我的第一个任务</td>
+                            <td>已完成</td>
+                            <td>伙伴研发</td>
+                            <td>陈沛</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>无</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" /></td>
+                            <td>我的第一个任务</td>
+                            <td>已完成</td>
+                            <td>伙伴研发</td>
+                            <td>陈沛</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>无</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" /></td>
+                            <td>我的第一个任务</td>
+                            <td>已完成</td>
+                            <td>伙伴研发</td>
+                            <td>陈沛</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>无</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" /></td>
+                            <td>我的第一个任务</td>
+                            <td>已完成</td>
+                            <td>伙伴研发</td>
+                            <td>陈沛</td>
+                            <td>6</td>
+                            <td>0</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>2014-10-10 15:30</td>
+                            <td>无</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="common-btn-box">
+                <button class="send-btn font-song">发送日报</button>
+                <button class="cal-btn font-song">取消</button>
+            </div>
+        </div>
+    </div>
+  </div>  
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap/bootstrap.js"></script>
+<script src="js/iCheck/jquery.icheck.js"></script>
+<script src="js/iCheck/jquery.icheck.binding.js"></script>
+<script src="js/jquery.livequery.js"></script>
+<script src="js/ueditor/ueditor.config.js"></script>
+<script src="js/ueditor/ueditor.all.js"></script>
+<script src="js/ueditor/HtmlEditor.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function () {
+
+         // var ue = UE.getEditor('container');
+
+        //点击显示htmleditor
+        $(".hide-htmleditor").on("click", function () {
+            $(this).hide().next(".htmleditor-box").show();
+        });
+    });
+</script>
+</body>
+</html>
+
+
