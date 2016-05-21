@@ -1,0 +1,211 @@
+﻿
+/*----------------------------------------------------------DESKTOP------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+    .media .pull-right {
+        float: right;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .media .pull-left {
+        float: left;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .form-horizontal .controls {
+        margin-left: 0px;
+    }
+
+    .login-page .login-box {
+        top: 30px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .media .media-action .pull-right.user-charge {
+        position: absolute;
+        right: 0;
+    }
+
+    .login-page .login-box form span#submitContainer {
+        display: block;
+    }
+
+    .media-list > li {
+        padding: 5px;
+    }
+
+    .avatar-large {
+        height: 100px;
+        width: 100px;
+    }
+
+    .e2-section-header .pf-pic {
+        width: 110px;
+    }
+
+    .avatar-large img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width:600px) {
+    .e2-task-list .media-list .media-action .action-link {
+        position: relative;
+        display: block;
+        left: 0;
+    }
+}
+
+@media (max-width: 979px) {
+    .user-card-list .user-card {
+        width: 100%;
+    }
+
+    .navbar .brand {
+        text-align: center;
+        width: 100%;
+    }
+
+    body > .navbar .brand {
+        width: 100%;
+    }
+
+    .navbar-fixed-top .pull-right.navbar-user {
+        float: none;
+    }
+
+    .navbar-search a i {
+        right: 30px;
+        top: 18px;
+    }
+
+    /*project-home*/
+    .media-dropdown .body-action span {
+        display:none;
+    }
+}
+
+@media (min-width:768px) and (max-width:979px) {
+    .navbar-fixed-top form#searchKnowledgeForm #quickSearch {
+        width: 95%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .user-card-list {
+        margin-left: 0px;
+    }
+
+    .medal-remind-me .bootstrap-timepicker {
+        width: 187px;
+    }
+
+    .medal-remind-me .period-remind .bootstrap-timepicker {
+        width: 125px;
+    }
+
+    .e2-aside .left-side-wrap {
+        height: auto;
+        width: 120px;
+        position: absolute !important;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        background: #393939;
+        z-index: 1000;
+        border: 1px solid #474747;
+    }
+
+    .container > .row-fluid > #left-sidebar-container {
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    .e2-sidenav > li > a span {
+        background: none;
+    }
+
+    .e2-sidenav > .active > a:hover span {
+        background: none;
+    }
+
+    .e2-sidenav .active > i {
+        display: none;
+    }
+
+    .e2-sidenav > li a:hover {
+        background-color: #0088cc;
+    }
+
+    .e2-sidenav li a {
+        color: #FFF;
+        text-shadow: none;
+        margin-right: 0;
+    }
+
+    .e2-sidenav li li a {
+        color: #FFF;
+    }
+
+    /*---------------------spacehome----------------------*/
+    .e2-profile-header .pf-info {
+        padding: 10px 10px 0 120px;
+    }
+
+    .e2-profile-header .pf-top .pull-left img {
+        width: 100px;
+    }
+
+    .e2-profile-header .pf-info .pf-action .btn span {
+        display: none;
+    }
+
+    /*-------------------------dialog---------------------------*/
+    .modal {
+        margin: auto;
+    }
+
+    /*-------------------------imageselector-----------------------------*/
+    .e2-photo-list .thumbnails li {
+        float:left;
+    }
+}
+
+.lx-shortcut-passage .unstyled {
+    width: 100%;
+}
+
+.lx-shortcut-passage li img {
+    width: 100px;
+    height: 100px;
+}
+
+.lx-shortcut-passage .unstyled li {
+    padding: 0 0 10px 0;
+}
+
+.lx-shortcut-passage li {
+    margin-right: 10px;
+}
+
+.wiki-container ul.ranking-list {
+    height: 200px;
+    overflow: auto;
+}
+
+body {
+    min-height: 550px;
+}
+
+/*----------------------------------------------------------PHONE------------------------------------------------------------------------*/
+
+
+/*@media (min-width: 1800px) {
+    .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 1650px;
+    }
+}*/

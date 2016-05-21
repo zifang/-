@@ -1,0 +1,61 @@
+/* CSS Document */
+
+a{opacity:.8; Alpha(opacity=80); transition:color 0.2s ease-in; text-decoration:none; }
+a:hover{opacity:1;}
+.ts-container{background-color:#fff;}
+.ts-common-box{width:1170px; margin:0 auto;}
+.ts-header{margin-top:80px;}
+
+.logo-box{margin-bottom:50px;}
+.header-right-box  li a:hover{background-color:#fff;}
+.search-box{margin-top:10px;position:relative;width:395px;height:45px;}
+.search-box input{width:96%;padding:2px 5px; height:85%; background-color:#f4fbff;}
+.search-box a{position:absolute;top:8px;border-top-right-radius:3px;border-bottom-right-radius:3px;right:10px;display:inline-block;height:24px;width:30px;}
+.search-box a:hover{ text-decoration:none;}
+.search-box .icon-search{font-size:25px;display:inline-block;margin-left:6px;margin-top:2px;}
+.ts-header .nav-big{width:100%;  background-color:#7ecefd; margin-bottom:0;}
+.ts-header .nav-big > li > a{padding:35px 40px; margin:0; border-radius:0; -webkit-border-radius:0; -moz-border-radius:0; background:url(../img/nav-bg.jpg) no-repeat left;}
+.ts-header .nav-big > li:first-child > a{background:none;}
+
+
+.ts-banner{height:670px; background-color:#f5f5f5;}
+.banner-list li{display:none;}
+.banner-list li.active{display:block;}
+
+.num li{float:left; list-style:none; padding-right:15px; font-size:8px;}
+
+.ts-content-box{width:1200px; margin:0 auto;}
+.ts-content .advertise-box{margin:35px 0;}
+.ts-content .advertise-box ul{margin:0;}
+.ts-content .advertise-box ul li{float:left; margin-left:28px; list-style:none;}
+.ts-content .advertise-box ul li:first-child{margin-left:0;}
+
+.partner-box{height:152px; width:100%;}
+.partner-box ul{margin:0; width:100%; height:100%; background:url(../img/partner-bg.jpg) no-repeat; opacity:.8;}
+.partner-box ul li{float:left; list-style:none;}
+.partner-box ul li a{display:inline-block;width: 232px;height: 152px;}
+.partner-box ul li a:hover{transition:background 0.2s ease-in; opacity:1;}
+.icon-apple{ background-position:0 0;}
+.icon-asus{background-position:-230px 0;}
+.icon-toshiba{background-position:-460px 0;}
+.icon-sony{background-position:-690px 0;}
+.icon-hp{background-position:-920px 0;}
+
+.img-box{margin:35px 0;}
+.new-prodect-box h2{font-size: 31.5px;font-weight: initial;color: #21a1e6;font-family: monospace; margin-bottom:30px;}
+.thumbnails li{width:280px; padding:40px 12px 0; border:none; margin:0; padding:40px 8px 0\9;}
+.thumbnails{border-top:1px solid #f2f2f2;}
+.thumbnail{padding:40px 15px 0;border: none;box-shadow: none;}
+.thumbnail h3{color:#7ecefd;}
+.thumbnail h4{color:#21a1e6; font-weight:normal; padding-bottom:25px;}
+.thumbnail p{color:#bcbcbc; line-height:20px;}
+.thumbnail .btn-1{display:inline-block; padding-right:10px; padding-top:22px; padding-bottom:40px;}
+.border-bg{width:100%; border:1px solid #ddd;}
+
+.ts-footer{background-color:#f1f1f1;}
+.foot-list{margin:0; padding-top:70px; padding-bottom:45px;}
+.foot-list li{float:left;list-style:none; width:300px;}
+.foot-list li h4{font-size: 17.5px;color: #7ecefd;font-weight: normal; margin-bottom:14px;}
+.foot-list li p{line-height: 20px;color: #bcbcbc;margin: 0;font-size: 12px;}
+.footer-box-2{height:45px; background-color:#2185c5;}
+.footer-box-2 p{color: #fff;padding-top: 16px; font-size:12px;}
